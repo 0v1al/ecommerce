@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  height: 100%; }
+
+.jumbo-wraper {
+  background-image: url("../../images/bg_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white; }
+
+.checkout {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .checkout h2 {
+    color: #4d4d4d;
+    padding-bottom: 2rem; }
+  .checkout h4, .checkout .total {
+    border-color: #e2edd3 !important; }
+  .checkout .checkout_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem; }
+
+.btn_order {
+  color: #fff;
+  background-color: #82ae46;
+  border-radius: .1rem;
+  transition: .3s all ease-in-out;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9rem; }
+  .btn_order:hover {
+    background-color: #678a37;
+    color: #fff; }
+
+.place_order {
+  margin-top: -3rem; }
+
+.checkout_form .form-control {
+  font-weight: 300;
+  border: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  height: 58px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: transparent !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  font-size: 14px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+  .checkout_form .form-control:focus {
+    border-color: #82ae46 !important; }
+
+.select_wrapper {
+  position: relative; }
+  .select_wrapper::after {
+    color: black;
+    content: '▾';
+    margin-right: 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px; }
+
+.place_order {
+  margin-top: 6rem; }
+
+.check_text {
+  font-size: .9rem; }
+
+/*# sourceMappingURL=checkout.css.map */

@@ -1,0 +1,123 @@
+@import '../../css/base/base';
+
+.jumbo-wraper {
+    background-image: url("../../images/bg_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(255, 255, 255);
+}
+
+#shop {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    .product-filter, a {
+        color: $primary-color;
+        outline: none;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $primary-color;
+    }
+    .active {
+        background-color: $primary-color !important;
+        color: #fff !important;
+    }
+    a.ac {
+        color: #fff !important;
+    }
+    .products {
+        margin-top: 6rem;
+    }
+    .pag {
+        margin-top: 6rem;
+        nav ul li.active {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+    .product {
+        cursor: pointer;
+        border: 0.1rem solid lighten(#000, 95%);
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .sale {
+          color: #000;
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: #fff;
+          background-color: $primary-color;
+          padding: 0.1rem 0.6rem;
+          z-index: 3;
+          font-size: 0.8rem;
+        }
+        img {
+          width: 100%;
+          height: 70%;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          transition: 0.1s all ease-in;
+          overflow: hidden;
+          z-index: -1;
+        }
+        h7,
+        p {
+          margin: 0;
+        }
+        h7 {
+          text-transform: uppercase;
+        }
+        .product-desc {
+          position: absolute;
+          z-index: 3;
+          bottom: 10%;
+          .text {
+            display: flex;
+            justify-content: center;
+            font-size: 0.9rem;
+            .price {
+              color: $primary-color;
+            }
+          }
+        }
+        .product-icons {
+          display: none;
+          position: absolute;
+          z-index: 3;
+          bottom: 10%;
+          transition: 0.2s all ease-in;
+          a {
+            outline: none;
+            i {
+              font-size: 0.7rem;
+              padding: 1rem;
+              background-color: $primary-color;
+              border-radius: 50%;
+              color: #fff;
+            }
+          }
+        }
+        &:hover img {
+          transform: scale(1.1);
+        }
+        &:hover .product-desc {
+          display: none;
+        }
+        &:hover .product-icons {
+          display: block;
+        }
+      }
+}
+
+.heart_icon {
+  transition: .3s all ease-in-out;
+}
+
+.red {
+  color: rgb(253, 98, 98) !important;
+}

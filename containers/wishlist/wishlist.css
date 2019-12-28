@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  height: 100%;
+}
+
+.jumbo-wraper {
+  background-image: url("../../images/bg_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.wishlist-products {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.wishlist-products .table thead {
+  background-color: #82ae46;
+  color: #fff;
+}
+
+.delete_btn {
+  display: inline-block;
+  font-weight: 100;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: .5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+  font-size: .7rem;
+  border: 0.1rem solid #d4d4d4;
+}
+
+.delete_btn:hover {
+  background-color: #82ae46;
+  color: #fff;
+  border: none;
+}
+
+.error {
+  display: none;
+  color: red;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.product_description {
+  font-size: .8rem;
+  color: #707070;
+  margin-top: .5rem !important;
+}
+/*# sourceMappingURL=wishlist.css.map */

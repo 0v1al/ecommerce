@@ -1,0 +1,232 @@
+@import "../base/base";
+
+.nav-scroll {
+  position: fixed;
+  transform: translateY(-5rem);
+  top: 0;
+  left: 0;
+  transition: 0.2s all ease-in-out;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.displayNav {
+  transform: translateY(0rem);
+}
+
+.top-bar {
+  background-color: $primary-color;
+  color: #fff;
+  padding-left: 7rem;
+  //   height: 1.5rem;
+  li {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 8rem;
+    span {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      padding: 0.3rem 0;
+    }
+  }
+}
+
+nav {
+  padding: 0.5rem 7rem !important;
+  background-color: #fff !important;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  .navbar-toggler {
+    background-color: $primary-color;
+    border: none !important;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+  }
+  a.navbar-brand {
+    color: darken($primary-color, 5%) !important;
+    font-weight: 800;
+    font-size: 1.3rem;
+    outline: none;
+  }
+  button {
+    outline: none;
+  }
+  .nav-link {
+    color: #000 !important;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin: 0 0.5rem;
+    outline: none;
+  }
+}
+
+.page-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background-color: #fff;
+  h5 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .footer-copyright {
+    font-weight: 550;
+  }
+  .up {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // margin: 0;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    &:hover {
+      color: #fff !important;
+    }
+    i {
+      padding: 1rem;
+      transition: 1s all ease-in-out;
+    }
+  }
+  .help {
+    margin-left: -5rem !important;
+  }
+  li:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+  a,
+  span {
+    font-size: 0.9rem;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  .footer-copyright {
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  .social {
+    i {
+      font-size: 1.5rem;
+      margin-right: 2rem;
+      outline: none;
+    }
+  }
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.bounce-bottom {
+  animation: bounce-bottom 2s steps(2, end) 1s infinite both;
+}
+
+@keyframes bounce-bottom {
+  0% {
+    transform: translateY(35px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+.shop-icon {
+  background-color: $primary-color;
+  font-weight: 800;
+}
+
+.shop_cart_icon_header_content {
+  position: absolute;
+  padding: 1rem 0rem;
+  width: 16rem; 
+  z-index: 5;
+  background-color: #fff;
+  border-radius: .1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: .1rem solid lighten($primary-color, 40%);
+  max-height: 19rem;
+  overflow-y: auto;
+  display: none;
+  .product_price {
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9rem;
+
+  }
+  .product_title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: lighten(#000, 25%);
+  }
+  .product_cart_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .1rem .5rem;
+    &:not(:last-child) {
+      border-bottom: .1rem solid lighten($primary-color, 45%);
+    }
+  }
+
+  .products_in_cart {
+    font-size: .9rem;
+    color: lighten(#000, 10%);
+    text-align: center;
+  }
+
+  .cart_empty {
+    font-size: .9rem;
+    color: $primary-color;
+    border: .1rem solid lighten(#000, 90%);
+    padding: 1rem;
+  }
+}
+

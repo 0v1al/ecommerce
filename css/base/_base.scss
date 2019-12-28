@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+$font-base: "Open Sans", sans-serif;
+$primary-color: #82ae46;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: $font-base;
+  line-height: 1.7;
+  height: 100%;
+}
+
+%button-a {
+  color: #fff;
+  background-color: $primary-color;
+  border-radius: 0.1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s all ease-in-out;
+  outline: none;
+  border: none;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: darken($primary-color, 10%);
+  }
+}

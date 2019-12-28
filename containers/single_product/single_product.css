@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  height: 100%; }
+
+#single_product {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
+
+.product_info p {
+  color: #585858;
+  font-size: .9rem; }
+
+.add_to_cart {
+  background-color: #82ae46;
+  color: #fff;
+  padding: .6rem 1rem;
+  font-weight: 400; }
+  .add_to_cart:hover {
+    background-color: #678a37;
+    color: #fff; }
+
+.btn-plus, .btn-minus {
+  background-color: #82ae46 !important;
+  color: #fff;
+  transition: .2s all ease-in-out; }
+  .btn-plus:hover, .btn-minus:hover {
+    background-color: #678a37 !important;
+    color: #fff; }
+
+.btn-plus {
+  margin-left: .5rem; }
+
+.btn-minus {
+  margin-right: .5rem; }
+
+.error {
+  display: none;
+  font-size: .8rem;
+  font-weight: bold; }
+
+.info {
+  font-size: .9rem;
+  font-weight: bold;
+  display: none;
+  color: #82ae46;
+  position: absolute;
+  bottom: 5%; }
+
+.add_cart_error {
+  display: none;
+  font-size: .9rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5%; }
+
+/*# sourceMappingURL=single_product.css.map */
